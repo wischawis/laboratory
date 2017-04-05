@@ -64,6 +64,27 @@ function getAllUsers(){
     }
     return $resultArray;
 }
+function getUser($id){
+    global $conn;
+    $sql = "SELECT * FROM member WHERE id_member = '$id'";
+    $res = $conn->query($sql);
+    $resultArray = array();
+    if($obResult = $res->fetch(PDO::FETCH_ASSOC))
+    {
+        $arrCol = array();
+        $arrCol = array("id_member"=>$obResult['id_member'],
+            "username"=>$obResult['username'],
+            "password"=>$obResult['password'],
+            "name"=>$obResult['name'],
+            "surname"=>$obResult['surname'],
+            "tel"=>$obResult['tel'],
+            "email"=>$obResult['email'],
+            "type_user"=>$obResult['type_user'],
+            "verify"=>$obResult['verify']);
+        array_push($resultArray,$arrCol);
+    }
+    return $resultArray;
+}
 function getUsersFail(){
     global $conn;
     $sql = "SELECT * FROM member WHERE verify=0";
