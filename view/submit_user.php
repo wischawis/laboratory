@@ -95,6 +95,7 @@ include ("header.php");
             <input type="submit" id="submit" value="ยืนยัน"/>
         </form>
     </div>
+</center>
     <?php
     include ("footer.php");
     ?>

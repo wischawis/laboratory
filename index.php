@@ -90,7 +90,7 @@
                 <a href="index.php" class="branding">
                     <img src="images/logo.png" alt="" class="logo">
                     <div class="logo-type">
-                        <h1 class="site-title">Company name</h1>
+                        <h1 class="site-title">Technology Laboratory</h1>
                         <small class="site-description">Tagline goes here</small>
                     </div>
                 </a>
@@ -183,43 +183,43 @@
     </div>
 
     <main class="main-content">
-        <div class="fullwidth-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature">
-                            <img src="images/icon-research-small.png" alt="" class="feature-image">
-                            <h2 class="feature-title">Research</h2>
-                            <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
-                            <a href="" class="button">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature">
-                            <img src="images/icon-medicine-small.png" alt="" class="feature-image">
-                            <h2 class="feature-title">Medicice</h2>
-                            <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
-                            <a href="" class="button">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature">
-                            <img src="images/icon-genetics-small.png" alt="" class="feature-image">
-                            <h2 class="feature-title">Genetics</h2>
-                            <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
-                            <a href="" class="button">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="feature">
-                            <img src="images/icon-energy-small.png" alt="" class="feature-image">
-                            <h2 class="feature-title">Energy</h2>
-                            <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
-                            <a href="" class="button">Learn more</a>
-                        </div>
-                    </div>
-                </div> <!-- .row -->
-            </div> <!-- .container -->
+        <!--  <div class="fullwidth-block">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-3 col-sm-6">
+                          <div class="feature">
+                              <img src="images/icon-research-small.png" alt="" class="feature-image">
+                              <h2 class="feature-title">Research</h2>
+                              <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+                              <a href="" class="button">Learn more</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <div class="feature">
+                              <img src="images/icon-medicine-small.png" alt="" class="feature-image">
+                              <h2 class="feature-title">Medicice</h2>
+                              <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+                              <a href="" class="button">Learn more</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <div class="feature">
+                              <img src="images/icon-genetics-small.png" alt="" class="feature-image">
+                              <h2 class="feature-title">Genetics</h2>
+                              <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+                              <a href="" class="button">Learn more</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <div class="feature">
+                              <img src="images/icon-energy-small.png" alt="" class="feature-image">
+                              <h2 class="feature-title">Energy</h2>
+                              <p>Laborum et dolorum fuga harum quidem rerum facilis et expedita distinctio nam libero tempore.</p>
+                              <a href="" class="button">Learn more</a>
+                          </div>
+                      </div>
+                  </div> <!-- .row
+            </div> <!-- .container
         </div> <!-- .fullwidth-block -->
 
         <div class="fullwidth-block" data-bg-color="#edf2f4">
@@ -254,7 +254,7 @@
             </div> <!-- .container -->
         </div> <!-- .fullwidth-block -->
 
-        <div class="fullwidth-block">
+       <!-- <div class="fullwidth-block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
@@ -274,9 +274,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="fullwidth-block cta" data-bg-image="images/cta-bg.jpg">
+       <!-- <div class="fullwidth-block cta" data-bg-image="images/cta-bg.jpg">
             <div class="container">
                 <h2 class="cta-title">Neque porro quisquam</h2>
                 <p>Modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil moles</p>
@@ -294,55 +294,47 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </main> <!-- .main-content -->
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="widget">
                         <h3 class="widget-title">Our address</h3>
-                        <strong>Company name INC</strong>
-                        <address>592 Avenue Street, Los Angeles, CA 90012</address>
-                        <a href="tel:+1 800 931 812">+1 800 931 812</a> <br>
-                        <a href="mailto:office@companyname.com">office@companyname.com</a>
+                        <strong>Technology Laboratory</strong>
+                        <address>ภาควิชาวิศวกรรมคอมพิวเตอร์ อาคาร 8 คณะวิศวกรรมศาสตร์ กำแพงแสน มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน อ.กำแพงแสน จ.นครปฐม 73140</address>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <!--<div class="col-md-3">
                     <div class="widget">
                         <h3 class="widget-title">Press room</h3>
                         <ul class="arrow-list">
                             <li><a href="#">Accusantium doloremque</a></li>
                             <li><a href="#">Laudantium totam aperiam</a></li>
-                            <li><a href="#">Eaque ipsa quae illo inventore</a></li>
-                            <li><a href="#">Veritatis et quasi architecto</a></li>
-                            <li><a href="#">Vitae dicta sunt explicabo</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="widget">
-                        <h3 class="widget-title">Research summary</h3>
-                        <ul class="arrow-list">
-                            <li><a href="#">Accusantium doloremque</a></li>
-                            <li><a href="#">Laudantium totam aperiam</a></li>
-                            <li><a href="#">Eaque ipsa quae illo inventore</a></li>
-                            <li><a href="#">Veritatis et quasi architecto</a></li>
-                            <li><a href="#">Vitae dicta sunt explicabo</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
+                </div>-->
+                <!-- <div class="col-md-3">
+                     <div class="widget">
+                         <h3 class="widget-title">Research summary</h3>
+                         <ul class="arrow-list">
+                             <li><a href="#">Accusantium doloremque</a></li>
+                             <li><a href="#">Laudantium totam aperiam</a></li>
+                         </ul>
+                     </div>
+                 </div>-->
+                <div class="col-md-6">
                     <div class="widget">
                         <h3 class="widget-title">Social media</h3>
-                        <p>Deserunt mollitia animi id est laborum dolorum fuga harum quidem rerum facilis.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <p>โทรศัพท์: 034-281074 ต่อ 7523 หรือ 099-6954159 | โทรสาร: 099-6954159 | </br>ติดต่อผู้ดูแลระบบ : fengsstc@ku.ac.th</p>
+                            <a href="https://www.facebook.com/cpe.eng.kps/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
                         </div>
                     </div>
                 </div>

@@ -31,12 +31,12 @@ if(isset($_POST['login'])){
         }
         else{
             $_SESSION["user"] = $mem;
+            echo "<script>alert('SUCCESS')</script>";
             header("Location:../index.php");
             exit();
         }
     }
     else{
-
         echo "<script>error();</script>";
         echo "<script>window.location='../index.php'</script>";
     }
