@@ -77,10 +77,10 @@
     <header class="site-header" data-bg-image="">
         <div class="container">
             <div class="header-bar">
-                <a href="index.html" class="branding">
+                <a href="../controller/home.php" class="branding">
                     <img src="../images/logo.png" alt="" class="logo">
                     <div class="logo-type">
-                        <h1 class="site-title">Company name</h1>
+                        <h1 class="site-title">Technology Laboratory</h1>
                         <small class="site-description">Tagline goes here</small>
                     </div>
                 </a>
@@ -92,12 +92,16 @@
                             if(isset($_SESSION["user"])){
                                 if($type_user == "ADMIN"){
                                     ?>
+                                    <li class="menu-item">
+                                        <a class="new-a" href="../controller/home.php">หน้าหลัก</a>
+                                    </li>
                                     <li class="dropdown menu-item">
                                         <a class='menu_th dropdown-toggle' href="#" data-toggle="dropdown">จัดการผู้ใช้
                                             <span class="glyphicon glyphicon-chevron-down"></span>
                                         </a>
                                         <div class="dropdown-menu" style="padding:17px;">
                                             <div class="dropdown-content">
+
                                                 <a class="new-a" href="../controller/datauser.php">แก้ไขข้อมูลผู้ใช้</a>
                                                 <a class="new-a" href="../controller/adduser.php">เพิ่มผู้ใช้</a>
                                                 <a class="new-a" href="../controller/submituser.php">ยืนยันผู้ใช้</a>
