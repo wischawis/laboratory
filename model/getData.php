@@ -106,7 +106,58 @@ function getUsersFail(){
     }
     return $resultArray;
 }
-
+function getAllProjects(){
+    global $conn;
+    $sql = "SELECT * FROM project INNER JOIN category ON project.id_category=category.id_category";
+    $res = $conn->query($sql);
+    $resultArray = array();
+    while($obResult = $res->fetch(PDO::FETCH_ASSOC))
+    {
+        $arrCol = array();
+        $arrCol = array("id_project"=>$obResult['id_project'],
+            "title"=>$obResult['title'],
+            "description"=>$obResult['description'],
+            "date_Published"=>$obResult['date_Published'],
+            "date_Occurred"=>$obResult['date_Occurred'],
+            "id_category"=>$obResult['id_category'],
+            "name_category"=>$obResult['name_category']);
+        array_push($resultArray,$arrCol);
+    }
+    return $resultArray;
+}
+function getProject($id){
+    global $conn;
+    $sql = "SELECT * FROM project INNER JOIN category ON project.id_category=category.id_category WHERE id_project='$id'";
+    $res = $conn->query($sql);
+    $resultArray = array();
+    if($obResult = $res->fetch(PDO::FETCH_ASSOC))
+    {
+        $arrCol = array();
+        $arrCol = array("id_project"=>$obResult['id_project'],
+            "title"=>$obResult['title'],
+            "description"=>$obResult['description'],
+            "date_Published"=>$obResult['date_Published'],
+            "date_Occurred"=>$obResult['date_Occurred'],
+            "id_category"=>$obResult['id_category'],
+            "name_category"=>$obResult['name_category']);
+        array_push($resultArray,$arrCol);
+    }
+    return $resultArray;
+}
+function getCategory(){
+    global $conn;
+    $sql = "SELECT * FROM category";
+    $res = $conn->query($sql);
+    $resultArray = array();
+    while($obResult = $res->fetch(PDO::FETCH_ASSOC))
+    {
+        $arrCol = array();
+        $arrCol = array("id_category"=>$obResult['id_category'],
+            "name_category"=>$obResult['name_category']);
+        array_push($resultArray,$arrCol);
+    }
+    return $resultArray;
+}
 
 
 ?>

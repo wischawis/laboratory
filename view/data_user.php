@@ -27,10 +27,14 @@ include ("header.php");
                     break;
                 }
             }
+            $('#idmem').val(user_select['id_member']);
+            $('#username').val(user_select['username']);
+            $('#pass').val(user_select['password']);
             $('#name').val(user_select['name']);
             $('#surname').val(user_select['surname']);
             $('#tel').val(user_select['tel']);
             $('#email').val(user_select['email']);
+            var typeU = user_select['type_user'];
         });
         $('.delete_col').click(function () {
             var id = $(this).data('id');
@@ -62,6 +66,9 @@ include ("header.php");
     label{
         padding-top: 6px;
         text-align: right;
+    }
+    .ch{
+        float: left;
     }
 </style>
 <div class="page-head" data-bg-image="../images/page-head-3.jpg" style="background-image: url('../images/page-head-3.jpg')">
@@ -116,7 +123,21 @@ include ("header.php");
 </div>
 
     <div id="panel">
-        <form action="#" method="post">
+        <form action="../model/updateUser.php" method="post">
+            <input type="hidden" class="form-control" name="idmem" id="idmem"/>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12">ชื่อผู้ใช้</label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" class="form-control" name="username" id="username"/>
+                    </div>
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12">รหัสผ่าน</label>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" class="form-control" name="pass" id="pass"/>
+                    </div>
+                </div>
+            </div>
+            <br/>
             <div class="row">
                 <div class="form-group">
                     <label class="control-label col-md-2 col-sm-2 col-xs-12">ชื่อ</label>
@@ -145,6 +166,18 @@ include ("header.php");
             <br/>
             <div class="row">
                 <div class="form-group">
+                    <div class="control-label col-md-2 col-sm-2 col-xs-12">ชนิดผู้ใช้</div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <input type="radio" style="float: left" name="type" class="typeUser"  value="STUDENT"/> <span class="ch"> STUDENT</span><br>
+                        <input type="radio" style="float: left" name="type" class="typeUser"  value="ADMIN" /><span class="ch"> ADMIN</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="form-group">
                     <div class="col-md-3 col-sm-3 col-xs-12"></div>
                     <div class="col-md-3 col-sm-3 col-xs-12">
                         <input type="submit" class="form-control" name="cancel" id="cancel" value="cancel"/>
@@ -155,6 +188,7 @@ include ("header.php");
                     <div class="col-md-3 col-sm-3 col-xs-12"></div>
                 </div>
             </div>
+
         </form>
     </div>
 </center>
